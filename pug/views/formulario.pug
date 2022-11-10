@@ -28,19 +28,21 @@
 //- </html>
 
 html 
-    body 
-        header=(<%- include('./navbar.ejs') %>)
-        h2(class="container", style="padding-top: 5%;")="Ingresar producto"
+    body(style="margin-left: 3%") 
+        h2(class="container", style="padding-top: 1%;")="Ingresar producto"
         form(action="/productos" method="post")
             label(for="producto")="Producto:"
             br
             input(type="text", class="form-control", id="producto", name="producto")
             br
+            br
             label( for="precio")="Precio:"
             br
             input(type="text", class="form-control", id="precio", name="precio")
             br
+            br
             label(for="thumbnail")="Imagen:"
+            br
             input(type="text", class="form-control", id="thumbnail", name="thumbnail")
             hr
-            button(type="submit", value="enviar", class="btn btn-success")
+            button(type="submit", value="enviar") Enviar

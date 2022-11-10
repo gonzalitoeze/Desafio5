@@ -1,20 +1,19 @@
 html 
     body 
-        nav(<%- include('./navbar.ejs') %>)
+        //- navinclude('./navbar.pug')
+        a(href="/formproductos")="Volver al formulario"
         h2="Vista de Productos"
         if productos.length == 0
           h3="No hay datos."
         else 
           table 
             tr 
-              th="Titulo"
+              th="Producto"
               th="Precio"
-              th="Foto"
-            each producto in productos 
+              th="Imagen"
+            each producto in productos
               tr 
                 td=producto.producto
                 td=producto.precio 
                 td 
-                  img(
-                    src=producto.thumbnail
-                  )
+                  img(src=producto.thumbnail)
