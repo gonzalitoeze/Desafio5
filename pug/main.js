@@ -13,23 +13,18 @@ app.set('view engine', 'pug');
 
 app.use('/static', express.static(__dirname + '/public'))
 
-const fs = require("fs");
 
 app.get('/productos', (req, res) => {
     const listaProductos = productos.getAll();
-    res.render('lista',{
-    productos: listaProductos
-    });
+    res.render('lista', {productos: listaProductos});
 });
-
 app.post('/productos', (req, res) => {
     const producto = req.body;
     productos.save(producto);
     res.render('formulario', {});
 });
-
 app.get('/formproductos', (req, res) => {
-    res.render('formulario', {})
+    res.render('formulario', {});
 });
 
 const server = app.listen(PORT, () => {
