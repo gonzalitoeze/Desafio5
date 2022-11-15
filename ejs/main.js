@@ -9,7 +9,6 @@ app.set('view engine', 'ejs');
 /* app.use('/static', express.static(__dirname + '/public')); */
 
 const fs = require("fs");
-
 // class Contenedor {
 //     constructor(file) {
 //         this.file = file;
