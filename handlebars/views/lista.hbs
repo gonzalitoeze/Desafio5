@@ -1,15 +1,15 @@
-<a href="/"><- Ir a formulario</a>
+<a href="/">Ir a formulario</a>
 <h2>Vista de Productos</h2>
-{{#if productos.length }}
+{{#if producto.length }}
   <table>
     <tr>
       <th>Titulo</th>
       <th>Precio</th>
       <th>Foto</th>
     </tr>
-    {{#each productos}}
+    {{#each producto}}
       <tr>
-        <td>{{productos}}</td>
+        <td>{{producto}}</td>
         <td>{{precio}}</td>
         <td><img src="{{thumbnail}}" alt=""></td>
       </tr>

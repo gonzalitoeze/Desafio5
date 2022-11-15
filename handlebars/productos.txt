@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "producto": "Cafetera Victoria Arduino",
+        "precio": "5000",
+        "thumbnail": "https://bartalks.net/wp-content/uploads/2020/09/image-049-1024x769.jpg"
+    },
+    {
+        "id": 2,
+        "producto": "Cafetera Victoria Arduino",
+        "precio": "5000",
+        "thumbnail": "https://bartalks.net/wp-content/uploads/2020/09/image-049-1024x769.jpg"
+    },
+    {
+        "id": 3,
+        "producto": "Cafetera Victoria Arduino",
+        "precio": "5000",
+        "thumbnail": "https://bartalks.net/wp-content/uploads/2020/09/image-049-1024x769.jpg"
+    },
+    {
+        "id": 4,
+        "producto": "Victoria Arduino E1 PRIMA",
+        "precio": "6000",
+        "thumbnail": "https://image.shutterstock.com/image-photo/auto-drip-coffee-maker-isolated-260nw-1675844569.jpg"
+    }
+]

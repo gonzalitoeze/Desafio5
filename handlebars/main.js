@@ -1,16 +1,16 @@
 const express = require('express');
 const app = express();
 const PORT = 8080;
-const hanlebars = require('express-handlebars');
+const handlebars = require('express-handlebars');
 const Contenedor = require('./Contenedor')
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.engine('hbs', hanlebars.engine({
+app.engine('hbs', handlebars.engine({
     extname: 'hbs',
     defaultLayout: 'index.hbs',
-    layoutsDir: __dirname + 'views'
+    layoutsDir: __dirname + '/views'
 }));
 
 app.set('views', './views');
@@ -18,10 +18,10 @@ app.set('view engine', 'hbs');
 
 app.use('/static', express.static(__dirname + '/public'));
 
-const productos = new Contenedor([]);
+const productos = new Contenedor('./productos.txt')
 
-app.get('/productos', (req, res) => {
-    const listaProductos = productos.getAll();
+app.get('/productos', async (req, res) => {
+    const listaProductos = await productos.getAll();
     res.render('lista', {
         productos: listaProductos
     });
