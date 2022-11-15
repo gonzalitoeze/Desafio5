@@ -31,7 +31,7 @@ app.post('/productos', (req, res) => {
     productos.save(producto);
     res.render('formulario', {});
 });
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
     res.render('formulario', {});
 });
 
