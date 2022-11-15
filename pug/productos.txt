@@ -10,5 +10,11 @@
         "producto": "Victoria Arduino E1 PRIMA",
         "precio": "6000",
         "thumbnail": "https://www.coffeeitalia.es/wp-content/uploads/2021/08/Mahlkonig-EK43.jpg.webp"
+    },
+    {
+        "id": 3,
+        "producto": "Cafetera Vic Mini",
+        "precio": "45",
+        "thumbnail": "https://image.shutterstock.com/image-photo/auto-drip-coffee-maker-isolated-260nw-1675844569.jpg"
     }
 ]
